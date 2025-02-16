@@ -168,8 +168,8 @@ export default function Collection() {
                 <h2 className="text-3xl font-semibold text-yellow-900">Welcome, {session.user.name}!</h2>
                 <button onClick={handleLogout} className="px-4 py-2 bg-yellow-900 text-white rounded-lg hover:bg-yellow-800">Logout</button>
             </div>
-            <BookList username={session.user.name} />
             <BookForm username={session.user.name} />
+            <BookList username={session.user.name} />
         </div>
     )
 }
